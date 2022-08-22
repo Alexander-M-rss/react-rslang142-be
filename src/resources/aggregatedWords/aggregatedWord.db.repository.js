@@ -84,7 +84,7 @@ const get = async (wordId, userId) => {
 
   const match = {
     $match: {
-      id: mongoose.Types.ObjectId(wordId)
+      _id: mongoose.Types.ObjectId(wordId)
     }
   };
 
